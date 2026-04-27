@@ -102,19 +102,20 @@ nav {
   font-size: 1.1rem;
 }
 
-/* GRID PRODOTTI */
+/* GRID PRODOTTI — ORA IN COLONNA */
 .products-section {
-  max-width: 1200px;
+  max-width: 600px;
   margin: auto;
   padding: 40px 20px 80px;
 }
 
 .products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 35px;
 }
 
+/* CARD PRODOTTO */
 .product-card {
   background: var(--bg-lighter);
   border-radius: var(--radius);
@@ -129,10 +130,13 @@ nav {
   box-shadow: 0 18px 45px rgba(0,0,0,0.12);
 }
 
+/* IMMAGINI PIÙ STRETTE CHE LARGHE */
 .product-card img {
   width: 100%;
-  height: 240px;
+  height: 380px;
   object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid #eee;
 }
 
 .product-info {
@@ -193,12 +197,13 @@ footer {
       <a href="chisiamo.html">Chi siamo</a>
       <a href="PROVA SERVIZI.html">Servizi</a>
       <a href="bilancio.html">Bilancio Sociale</a>
-	  <a href="assistenza.html">Assistenza</a>
+      <a href="assistenza.html">Assistenza</a>
     </div>
 
     <div class="social-box">
-      <img src="immagini/instagram.png" alt="Instagram" style="width:60px" style="height:60px">
-	  <img src="immagini/tiktok.png" alt="TikTok" style="width:60px" style="height:60px">    </div>
+      <img src="immagini/instagram.png" alt="Instagram" style="width:60px">
+      <img src="immagini/tiktok.png" alt="TikTok" style="width:60px">
+    </div>
   </nav>
 </header>
 
@@ -227,7 +232,7 @@ footer {
       <div class="product-info">
         <h3>Collana Deluxe oro OpenEyes</h3>
         <p>Un accessorio raffinato che combina stile e protezione personale avanzata.</p>
-        <button>85€</</button>
+        <button>85€</button>
       </div>
     </div>
 
